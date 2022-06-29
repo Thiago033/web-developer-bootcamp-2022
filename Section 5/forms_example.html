@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms Example</h1>
+
+    <form action="">
+        <input type="text" placeholder="username">
+        <input type="password" placeholder="password">
+        <input type="color">
+        <input type="number" placeholder="number">
+        <input type="range">
+        <input type="time">
+        <input type="date">
+    </form>
+    
+    <br>
+
+    <form action="">
+        <p>
+            <label for="username">Enter a Username:</label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter a Password:</label>
+            <input id="password" type="password" placeholder="password" name="password">
+        </p>
+    </form>
+
+    <br>
+
+    <form action="https://www.reddit.com/search">
+        <input type="text" name="q" placeholder="Search">
+        <button>Search on reddit</button>
+    </form>
+
+    <br>
+  
+    <form action="/test">
+
+        <label for="agree">test</label>
+        <input type="checkbox" name="agree_tos" id="agree">
+
+        <p>
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="xs" value="xs">
+
+            <label for="s">S:</label>
+            <input type="radio" name="size" id="s" value="s">
+
+            <label for="m">M:</label>
+            <input type="radio" name="size" id="m" value="m">
+        </p>
+
+        <p>
+            <label for="numbers">Select a number</label>
+            <select name="numbers" id="numbers">
+                <option value="">Choose an option</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="volume">Volume</label>
+            <input type="range" name="volume" id="volume" min="0" max="100" step="5" value="50">
+        </p>
+
+        <p>
+            <label for="text">Text Area</label>
+            <textarea name="text" id="text" cols="20" rows="3" placeholder="Type something here."></textarea>
+        </p>
+
+        <button>Submit</button>
+    </form>
+
+    <h2>Validations demo</h2>
+
+    <form action="">
+        <p>
+            <label for="first">Enter First Name</label>
+            <input type="text" name="first" id="first" required>
+        </p>
+
+        <p>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required minlength="6" maxlength="20">
+        </p>
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>

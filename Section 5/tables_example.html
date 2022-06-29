@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+
+<body>
+
+    <!--
+        <td> - table data
+        <tr> - table row
+        <th> - cells header
+        <theader> - table header
+    -->
+
+    <h1>Table example 1</h1>
+
+    <table>
+        </thead>
+            <tr>
+                <th>Animal</th>
+                <th>Avarage mass</th>
+                <th>Maximum mass</th>
+                <th>Flighted</th>
+            </tr>
+        <thead>
+
+        <tbody>
+            <tr>
+                <td>Ostrich</td>
+                <td>104 (230)</td>
+                <td>158.8 (346)</td>
+                <td>No</td>
+            </tr>
+
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>90(200)</td>
+                <td>130 (187)</td>
+                <td>No</td>
+            </tr>
+
+            <tr>
+                <td>Domestic turkey</td>
+                <td>13.5 (29.8)</td>
+                <td>39 (86)</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <h1>Table example 2 - rowspan/colspan</h1>
+
+    <table>
+        </thead>
+            <tr>
+                <th rowspan="2">Animal</th>
+                <th colspan="2">Avarage Mass</th>
+                <th rowspan="2">Flighted</th>
+            </tr>
+
+            <tr>
+                <th>KG</th>
+                <th>LB</th>
+            </tr>
+        <thead>
+
+        <tbody>
+            <tr>
+                <td>Ostrich</td>
+                <td>104</td>
+                <td>230</td>
+                <td>No</td>
+            </tr>
+
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>90</td>
+                <td>200</td>
+                <td>No</td>
+            </tr>
+
+            <tr>
+                <td>Domestic turkey</td>
+                <td>13.5</td>
+                <td>29.8</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h1>Table example 3 - rowspan/colspan</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">City</th>
+                <th rowspan="2">Country</th>
+                <th rowspan="2">Skyline</th>
+                <th rowspan="2">UN 2018 population estimates</th>
+                <th colspan="3">City Proper</th>
+                <th colspan="2">Metropolitan area</th>
+                <th colspan="2">Urban Area</th>
+            </tr>
+
+            <tr>
+                <th>Definition</th>
+                <th>Population</th>
+                <th>Area km^2</th>
+                <th>Population</th>
+                <th>Area km^2</th>
+                <th>Population</th>
+                <th>Area km^2</th>
+            </tr>
+        </thead>
+    </table>
+    
+</body>
+</html>

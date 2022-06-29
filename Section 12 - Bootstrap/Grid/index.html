@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Basics</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <h1 class="display-1 text-center text-primary">The Grid System</h1>
+
+        <div class="row">
+            <div class="col-2 bg-success">I AM 2 UNITS</div>
+            <div class="col-8 bg-danger">I AM 8 UNITS</div>
+            <div class="col-2 bg-success">I AM 2 UNITS</div>
+        </div>
+        <div class="row">
+            <div class="col-3 bg-success">I AM 3 UNITS</div>
+            <div class="col-6 bg-danger">I AM 6 UNITS</div>
+            <div class="col-3 bg-success">I AM 3 UNITS</div>
+        </div>
+        <div class="row">
+            <div class="col bg-success">I AM AUTO SIZED</div>
+            <div class="col bg-danger">I AM AUTO SIZED</div>
+            <div class="col-8 bg-success">I AM 8 UNITS</div>
+            <div class="col bg-info">I AM AUTO SIZED</div>
+        </div>
+
+        <!----------------------------------------------------------------------->
+
+        <h2 class="display-2 text-center">Responsive Grid</h2>
+
+        <div class="row">
+            <div class="col-md-6 col-xl-3 bg-info">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium earum asperiores nostrum dolores saepe cupiditate beatae in molestias. Distinctio pariatur voluptatibus molestiae voluptas veritatis deleniti, temporibus nam labore voluptates quos.
+            </div>
+            <div class="col-md-6 col-xl-3 bg-success">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae a odio praesentium, architecto rem laboriosam cumque consequatur unde ducimus! Itaque aut accusamus similique est repudiandae voluptate eveniet culpa et in.
+            </div>
+            <div class="col-md-6 col-xl-3 bg-info">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium earum asperiores nostrum dolores saepe cupiditate beatae in molestias. Distinctio pariatur voluptatibus molestiae voluptas veritatis deleniti, temporibus nam labore voluptates quos.
+            </div>
+            <div class="col-md-6 col-xl-3 bg-success">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae a odio praesentium, architecto rem laboriosam cumque consequatur unde ducimus! Itaque aut accusamus similique est repudiandae voluptate eveniet culpa et in.
+            </div>
+        </div>
+
+        <h2 class="display-2 text-center">Useful Grid Utilities</h2>
+
+        <div class="row align-items-center">
+            <div class="col-3 bg-warning">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium earum asperiores nostrum dolores saepe cupiditate beatae in molestias. Distinctio pariatur voluptatibus molestiae voluptas veritatis deleniti, temporibus nam labore voluptates quos.
+            </div>
+            <div class="col-3 bg-danger">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae a odio praesentium, architecto rem laboriosam cumque consequatur unde ducimus! Itaque aut accusamus similique est repudiandae voluptate eveniet culpa et in. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi nam totam unde vitae voluptate deleniti ipsum, quidem, odio doloribus, rem cumque eveniet maiores sapiente est nemo mollitia? Doloremque, esse incidunt.
+            </div>
+            <div class="col-3 bg-info">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium earum asperiores nostrum dolores saepe cupiditate beatae in molestias. Distinctio pariatur voluptatibus molestiae voluptas veritatis deleniti, temporibus nam labore voluptates quos.
+            </div>
+            <div class="col-3 bg-success">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae a odio praesentium, architecto rem laboriosam cumque consequatur unde ducimus! Itaque aut accusamus similique est repudiandae voluptate eveniet culpa et in.
+            </div>
+        </div>
+
+        <!---------------------------------------------------------------------------->
+
+        <h3 class="display-2 text-center">Justify Content</h3>
+
+        <div class="row border justify-content-center justify-content-lg-start justify-content-xl-between">
+            <div class="col-md-4 bg-primary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, quam eum natus non magni distinctio quis maxime, quae fugit numquam veritatis in. Deserunt, nesciunt. Animi dolorem impedit consectetur quibusdam temporibus?
+            </div>
+
+            <div class="col-md-4 bg-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, quam eum natus non magni distinctio quis maxime, quae fugit numquam veritatis in. Deserunt, nesciunt. Animi dolorem impedit consectetur quibusdam temporibus?
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
