@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details - <%= product.name %></title>
+</head>
+<body>
+    <h1><%= product.name %> </h1>
+    <h2>Price: $<%= product.price %> </h2>
+    <h2>Category: <a href="/products?category=<%= product.category %>"><%= product.category %></a></h2>
+
+    <a href="/products">All Products</a>
+    <a href="/products/<%= product.id %>/edit">Edit</a>
+
+    <form action="/products/<%= product.id %>?_method=DELETE" method="POST">
+        <button>Delete</button>
+    </form>
+</body>
+</html>
