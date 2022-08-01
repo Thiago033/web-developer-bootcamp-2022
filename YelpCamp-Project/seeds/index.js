@@ -25,19 +25,20 @@ const seedDB = async () => {
         //Pick a random index of a city from "/cities"
         const random1000 = Math.floor(Math.random() * 1000);
 
+        //Pick a random number for "price"
+        const price = Math.floor(Math.random() * 20) + 10;
+
         const camp = new Campground({
-            title: `${cities[random1000].city}, ${cities[random1000].state}`,
-            location: `${sample(descriptors)} ${sample(places)}`
-        })
+            title: `${sample(descriptors)} ${sample(places)}`,
+            location: `${cities[random1000].city}, ${cities[random1000].state}`,
+            image: 'https://picsum.photos/200/300',
+            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi sint vitae quo earum vero saepe totam? Voluptatem eveniet, ut expedita iusto ad quasi? Atque aliquam, voluptas ipsam aspernatur explicabo nobis.',
+            price
+        });
 
         await camp.save();
     }
 }
-
-// title: String,
-// price: String,
-// description: String,
-// location: String
 
 seedDB().then(() => {
     mongoose.connection.close();
